@@ -16,7 +16,7 @@ class Cart {
         }
     }
 
-    public function removeProductToCart(string $product) {
+    public function removeProductFromCart(string $product) {
         if (isset($this->products[$product])) {
             unset($this->products[$product]);
         }

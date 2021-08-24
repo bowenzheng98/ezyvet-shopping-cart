@@ -8,7 +8,7 @@ if (empty($_SESSION['cart'])) {
     $_SESSION['cart'] = new Cart();
 }
 
-$_SESSION['cart']->removeProductToCart($_GET['product']);
+$_SESSION['cart']->removeProductFromCart($_GET['product']);
 
 echo '<div>Removed '.$_GET['product'].' from the cart</div>';
 
